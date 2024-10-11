@@ -1,15 +1,12 @@
 {
   "canisters": {
-    "hvym_assets_template_backend": {
-      "main": "src/hvym_assets_template_backend/main.mo",
-      "type": "motoko"
-    },
-    "hvym_assets_template_frontend": {
-      "dependencies": [
-        "hvym_assets_template_backend"
-      ],
+    "www": {
+      "frontend": {
+        "entrypoint": "assets/src/index.html"
+      },
       "source": [
-        "src/hvym_assets_template_frontend/assets"
+        "assets/assets",
+        "assets/src"
       ],
       "type": "assets"
     }
@@ -20,6 +17,5 @@
       "packtool": ""
     }
   },
-  "output_env_file": ".env",
   "version": 1
 }
